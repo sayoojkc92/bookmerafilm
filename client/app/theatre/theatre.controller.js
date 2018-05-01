@@ -118,13 +118,13 @@ SaveMovieMap(selectedMovie) {
   $('#multiselect_to option').each(function() {
     context.selectedTheatres.push($(this).val());
   });
+  //test ---- 
   var movie = this.Movies.find(function(t) {
     return selectedMovie === t._id;
   });
   console.log(movie);
   var dates = $('#mdp-demo').multiDatesPicker('getDates');
   console.log(dates);
-  //if()
 
   // movie.Theatres.find(function(element) {
     
