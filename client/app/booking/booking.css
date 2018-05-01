@@ -1,0 +1,15 @@
+.seat{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 20%
+}
+
+.seatselected{
+    background-color: green;
+    border-width: 3px;
+}
+
+#handlingFee {
+    display: none;
+}

@@ -1,0 +1,76 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table">
+                <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                    <th>E</th>
+                    <th>F</th>
+                    <th>G</th>
+                    <th>H</th>
+                    <th>I</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="A1" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A2" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A3" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A4" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A5" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A6" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A7" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A8" class="seat"></div>
+                    </td>
+                    <td>
+                        <div id="A9" class="seat"></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <div class="well">
+                <h3>Booking Summary</h3>
+                <table class="table">
+                    <tr>
+                        <td>Number of seats</td>
+                        <td><span id="totalSeats"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Seat No</td>
+                        <td><span id="seatNumbers"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Sub total</td>
+                        <td><span id="amount"></span></td>
+                    </tr>
+                    <tr id="handlingFee">
+                        <td>Handling fee</td>
+                        <td><span>Rs: 20</span></td>
+                    </tr>
+                    <tr>
+                        <td>Amount Payable</td>
+                        <td><span id="totalAmount"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <button class="btn btn-success" ng-click="bookingCtrl.SaveBooking()">Proceed to payment</button>
+        </div>
+    </div>
+</div>

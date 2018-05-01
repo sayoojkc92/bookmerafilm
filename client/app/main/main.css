@@ -1,0 +1,119 @@
+.thing-form {
+  margin: 20px 0;
+}
+
+#banner {
+  border-bottom: none;
+  margin-top: -20px;
+}
+
+#banner h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.hero-unit {
+  position: relative;
+  padding: 30px 15px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+  background: #4393B9;
+}
+
+.navbar-text {
+  margin-left: 15px;
+}
+
+.card
+{
+    border:2px solid;
+    border-color:lightgrey;
+    width:300px;
+    background-color: white;
+    padding-bottom: 10px;
+    background-color: #f3e9e9;
+}
+.title
+{
+    font-weight:bold;
+    color:black;
+    font-size:20px;
+    padding:5px 3px;
+}
+.genre-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.genre
+  {
+      border:1px solid grey;
+      font-weight:100;
+      padding: 3px 4px;
+      margin:3px;
+      background-color: #ececec;
+      border-radius: 8px;
+
+  }
+#container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container > div {
+margin: 10px;
+padding: 10px;
+}
+
+.poster-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+radio button style
+*/
+.select-class {
+  list-style-type:none;
+  margin:25px 0 0 0;
+  padding:0;
+}
+
+.select-class li {
+  float:left;
+  margin:0 5px 0 0;
+ width:100px;
+ height:40px;
+ position:relative;
+}
+
+.select-class label, .select-class input {
+ display:block;
+ position:absolute;
+ top:0;
+ left:0;
+ right:0;
+ bottom:0;
+}
+
+.select-class input[type="radio"] {
+ opacity:0.011;
+ z-index:100;
+}
+
+.select-class input[type="radio"]:checked + label {
+ background:yellow;
+}
+
+.select-class label {
+  padding:5px;
+  border:1px solid #CCC; 
+  cursor:pointer;
+ z-index:90;
+}
+
+.select-class label:hover {
+  background:#DDD;
+}

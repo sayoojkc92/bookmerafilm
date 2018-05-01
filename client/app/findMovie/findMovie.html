@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <input type="text" placeholder="Movie Name" ng-model="findMovieCtrl.MovieName" class="form-control">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Year" ng-model="findMovieCtrl.Year" class="form-control">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success" ng-click="findMovieCtrl.SearchMovie()">Search Movie</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8">
+            <table class="table" ng-show="findMovieCtrl.MovieData!=''">
+                <tr>
+                    <th>Poster</th>
+                    <th>Movie Name</th>
+                    <th>Genre</th>
+                    <th>Companies</th> 
+                    <th>Duration</th>
+                    <th>><button class="btn btn-success" ng-click="findMovieCtrl.addMovie()"> Add movie</button></th>
+                </tr>
+                <tr>
+                    <td><img src="http://image.tmdb.org/t/p/w500{{findMovieCtrl.MovieData.poster_path}}" width="130" height="200"></td>
+                    <td>{{findMovieCtrl.MovieData.title}}</td>
+                    <td><p ng-repeat="g in findMovieCtrl.MovieData.genres">{{g.name}}</p></td>
+                    <td><p ng-repeat="c in findMovieCtrl.MovieData.production_companies">{{c.name}}</p></td>
+                    <td>{{findMovieCtrl.MovieData.runtime}} Min.</td>
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
